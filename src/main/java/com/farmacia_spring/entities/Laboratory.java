@@ -14,12 +14,12 @@ public class Laboratory {
 	@Id
 	@Column(name="id_laboratorio")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_laboratorio;
+	public long id_laboratorio;
 	
 	@Column(name="nombre", nullable = false, length = 65)
-	private String nombre;
+	public String nombre;
 	
 	@Column(name="vigencia", nullable = true)
-	private boolean vigencia;
+	public boolean vigencia;
 	
 }
